@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya:400,700|Roboto');
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    margin-bottom: 50px; /* Margin bottom by footer height */
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px; /* Set the fixed height of the footer here */
+    line-height: 45px; /* Vertically center the text there */
+    background-color: #f5f5f5;
+}
+
+
+* {
+    border-radius: 0 !important;
+}
+
+.cover-banner h1{
+    font-family: 'Alegreya', serif;
+    font-weight: bold;
+}
+
+.not-sure-text h2{
+    font-family: 'Alegreya', serif;
+    font-weight: bold;
+}
+
+nav{
+    transition:0.3s all;
+}
+
+nav .nav-link{
+    font-family: 'Roboto', sans-serif;
+}
+
+button.navbar-toggler{
+    border-color: white;
+    color:white;
+}
+
+.navbar-toggler-icon{
+    border-color:white;
+    color:white;
+}
+
+
+.navbar{
+    background: rgba(0,0,0,0);
+}
+
+.navbar .dropdown-menu{
+    background: #212121;
+}
+
+.navbar .dropdown-menu .dropdown-item:hover, .navbar .dropdown-menu.dropdown-item:focus{
+    background-image: none!important;
+}
+
+.navbar .dropdown-menu .dropdown-item:hover, .navbar .dropdown-menu.dropdown-item:focus{
+    background: #323232;
+}
+
+.cover-banner{
+    background: linear-gradient(rgba(35,7,77,0.5), rgba(204,83,51,0.5)), url("/img/library.jpg");
+    background-size: cover;
+}
+
+.cover-banner .btn{ /* the 2 big buttons at the homepage! */
+    font-size: 2em;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 5px;
+    border: 1px solid black;
+}
+
+.search-banner{
+    background: linear-gradient(90deg,rgba(0,0,70,0.7),rgba(28,181,224,0.7)), url("/img/magnifyingglass.jpg");
+}
+
+.error-banner{
+    width:100%;
+    height:calc(100vh - 106px);
+    background:url('/img/deadrat.jpg');
+    background-size:cover;
+}
+
+.featured-box{
+    background:#f9fbff;
+    border:#E9E9E9 solid 1px;
+    height: 15em;
+    font-family: Roboto, sans-serif;
+    position: relative;
+}
+
+.featured-box h4{
+    color:#00368e;
+}
+
+.featured-box .under, .featured-box .over{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 10px;
+}
+
+.featured-box .over{
+    background: whitesmoke;
+    opacity: 0;
+    transition: 0.5s all;
+    cursor: pointer;
+    padding-left:4px;
+    padding-right:4px;
+}
+
+.featured-box .over a{
+    text-decoration:none;
+}
+
+.black-bar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height:56px;
+    background:#212121;
+    z-index: 20;
+    transition: 0.3s all;
+}
+
+.navbar{
+    z-index: 30;
+}
+
+.alert{
+    margin:0;
+}
+
+.bar-filler{
+    height: 56px;
+    width: 100%;
+}
+
+.book-metadata{
+    width:100%;
+}
+
+.book-metadata td{
+    font-size: 1.2em;
+}
+
+.book-metadata a{
+    color:#00368e;
+}
+
+.book-metadata td:first-child{
+    font-weight:bold;
+    padding-right:1em;
+    padding-left:0.5em;
+}
+
+.category-box{
+    font-family: Roboto, sans-serif;
+    height:5em;
+    border: #CDCDCD 2px solid;
+    margin-bottom: 1em;
+    font-size:1.2em;
+    background:rgba(43,88,118,0.7);
+    color: #F0F0F0;
+    font-weight:bold;
+    transition:0.3s all;
+}
+
+.category-box:hover{
+    color:white;
+    background:rgba(78,67,118,0.7);
+}
+
+.author-banner{
+    background: linear-gradient(90deg, rgba(254,225,64,0.7) 0%, rgba(250,112,154,0.7) 100%), url("/img/coffee.jpg");
+    background-size:cover;
+
+}
+
+.book-banner{
+    background: linear-gradient(90deg, rgba(254,225,64,0.7) 0%, rgba(250,112,154,0.7) 100%), url("/img/book.jpg");
+    background-size:cover;
+}
+
+.category-banner,.display-categories-banner{
+    background: linear-gradient(90deg, rgba(43,88,118,0.7), rgba(78,67,118,0.7) 100%), url("/img/bookshelf.jpg");
+    background-size:cover;
+}
+
+.reset-password-banner{
+    background: linear-gradient(90deg, rgba(43,88,118,0.7), rgba(78,67,118,0.7) 100%), url("/img/question-mark.jpg");
+    background-size:cover;
+}
+
+.searchType{
+    width:15%;
+}
+.searchField{
+    width:75%;
+}
+.user-logs-banner{
+    width:100%;
+    height:40vh;
+    background: linear-gradient(90deg, rgba(29,67,80,0.7), rgba(164,57,49,0.7) 100%), url("/img/office.jpg");
+    background-size:cover;
+}
